@@ -6,45 +6,43 @@
     <title>Login</title>
     <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-<main>
-    <head>
-        <div>
-            <img src="./img/logo.png" alt="logo">
+<main class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6 col-lg-4">
+            <div class="text-center mb-4">
+                <img src="./img/logo.png" alt="logo" class="img-fluid">
+            </div>
+            <form action="" method="post">
+                <div class="mb-3">
+                    <label for="user" class="form-label">
+                        Usuario o mail:
+                    </label>
+                    <input type="text" name="user" id="user" class="form-control" placeholder="joedoe@gmail.com" autofocus autocomplete="off" required>
+                </div>
+                <div class="mb-3">
+                    <label for="password" class="form-label">
+                        Contraseña:
+                    </label>
+                    <input type="password" name="password" id="password" class="form-control" placeholder="123" autocomplete="off">
+                </div>
+                <div class="mb-3 form-check">
+                    <input type="checkbox" name="recordar" id="recordar" class="checkbox-a">
+                    <label for="recordar" class="form-check-label">Recordar</label>
+                    <a href="#" class="float-end text">¿Olvidaste tu contraseña?</a>
+                </div>
+                <div class="d-grid mb-3">
+                    <button type="submit" class="btn btn-color">
+                        Iniciar Sesión
+                    </button>
+                </div>
+                <div class="text-center">
+                    <a class="btn-registrar" href="#">Registrarse</a>
+                </div>
+            </form>
         </div>
-    </head>
-
-    <div>
-        <form action="" method="post">
-            <div>
-                <label for="user">
-                    Usuario o mail:
-                    <input type="text" name="user" id="user" placeholder="joedoe@gmail.com" autofocus autocomplete="off" required>
-                </label>
-            </div>
-            <div>
-                <label for="password">
-                    Contrasena:
-                    <input type="password" name="password" placeholder="123" autocomplete="off" id="password">
-                </label>
-            </div>
-            <div>
-                <label for="recordar">
-                    <input type="checkbox" name="recordar" id="recordar">
-                    Recordar
-                </label>
-                <a href="#">Olvidaste tu contrasena?</a>
-            </div>
-            <div>
-                <button type="submit">
-                    Iniciar Sesion
-                </button>
-            </div>
-            <div>
-                <a href="#">Registrarse</a>
-            </div>
-        </form>
     </div>
     <script src="./js/bootstrap.min.js"></script>
 </main>

@@ -1,0 +1,23 @@
+.btn-color{
+    background-color: #FF4081;
+    color: #EBEBEB;
+    font-weight: bold;
+}
+.text{
+    color: #00829B;
+    text-decoration: none;
+}
+.btn-registrar{
+    color: #333333;
+    font-weight: bold;
+    text-decoration: none;
+    transition: all 1s ease-in-out;
+}
+.btn-registrar:hover{
+    border: 1px solid #00829B;
+    border-radius: 8px;
+    
+}
+.checkbox-a:checked{
+    accent-color: #FF4081;
+}
