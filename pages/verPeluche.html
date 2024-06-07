@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ver Peluches</title>
+        <script src="../js/tailwind.min.js"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                btn: '#B47341',
+                btn2: '#c1854e',
+              }
+            }
+          }
+        }
+      </script>
+         <style>
+            :root {
+                --accent: #8B4513; /* Accent color */
+                --border: #8B4513; /* Border, sombras y detalles */
+                --text: #000000;   /* Text color */
+                --background: #F5F5DC; /* Background color */
+            }
+    
+            .bg-custom {
+                background-color: var(--background);
+            }
+    
+            .border-custom {
+                border-color: var(--border);
+            }
+    
+            .text-custom {
+                color: var(--text);
+            }
+    
+            .accent {
+                background-color: var(--accent);
+            }
+        </style>
+    <link rel="stylesheet" href="../css/bootstrap.css" type="application/octet-stream"> 
+</head>
+<body>
+    <div class="container mx-auto py-8">
+        <h1 class="text-2xl font-bold mb-4">Peluches de Crochet</h1>
+        <table class="min-w-full bg-white border border-custom" id="table">
+            <thead>
+                <tr>
+                    <th class="px-4 py-2 border border-custom">Nombre</th>
+                    <th class="px-4 py-2 border border-custom">Precio</th>
+                    <th class="px-4 py-2 border border-custom">Color</th>
+                    <th class="px-4 py-2 border border-custom">Tamaño</th>
+                    <th class="px-4 py-2 border border-custom">Categoría</th>
+                    <th class="px-4 py-2 border border-custom">Descripción</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="bg-custom border border-custom">
+                    <td class="px-4 py-2 border border-custom">Conejito Azul</td>
+                    <td class="px-4 py-2 border border-custom">$25.00</td>
+                    <td class="px-4 py-2 border border-custom">Azul</td>
+                    <td class="px-4 py-2 border border-custom">30 cm</td>
+                    <td class="px-4 py-2 border border-custom">Animales</td>
+                    <td class="px-4 py-2 border border-custom">Peluchito suave y adorable</td>
+                </tr>
+                <tr class="bg-custom border border-custom">
+                    <td class="px-4 py-2 border border-custom">Osito Marrón</td>
+                    <td class="px-4 py-2 border border-custom">$30.00</td>
+                    <td class="px-4 py-2 border border-custom">Marrón</td>
+                    <td class="px-4 py-2 border border-custom">35 cm</td>
+                    <td class="px-4 py-2 border border-custom">Animales</td>
+                    <td class="px-4 py-2 border border-custom">Perfecto para abrazos</td>
+                </tr>
+            </tbody>
+        </table>
+    </div> 
+
+    <script src="../js/bootstrap.min.js"></script>
+</body>
+</html>

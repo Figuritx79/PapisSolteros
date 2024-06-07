@@ -1,5 +1,5 @@
 .btn-color{
-    background-color: #FF4081;
+    background-color: #B47341;
     color: #EBEBEB;
     font-weight: bold;
 }
@@ -14,7 +14,7 @@
     transition: all 1s ease-in-out;
 }
 .btn-registrar:hover{
-    border: 1px solid #00829B;
+    border: 1px solid ##c1854e;
     border-radius: 8px;
     
 }
