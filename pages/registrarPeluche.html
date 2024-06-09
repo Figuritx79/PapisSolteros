@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registrar Peluches</title>
     <script src="../js/tailwind.min.js"></script>
+    <link rel="stylesheet" href="../css/bootstrap.css">
+
     <script>
         tailwind.config = {
           theme: {
@@ -16,54 +18,60 @@
             }
           }
         }
-      </script>
-    <link rel="stylesheet" href="../css/bootstrap.css" type="application/octet-stream"> 
+    </script>
+    <style>
+        #descripcion {
+            height: 100px; /* Aumenta la altura del input de descripción */
+            resize: vertical; /* Permite al usuario redimensionar verticalmente */
+            overflow-y: auto; /* Agrega una barra de desplazamiento vertical si es necesario */
+        }
+    </style>
 </head>
 <body>
-    <div>
-        <form action="./verPeluche.html" method="get">
+    <main class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6 col-lg-4">
+                <form action="./verPeluche.html" method="get">
+                    <div class="mb-3">
+                        <label for="nombre" class="form-label">Nombre:</label>
+                        <input type="text" name="nombre" id="nombre" class="form-control" placeholder="Oso de peluche">
+                    </div>
 
-            <div>
-                <label>Nombre:
-                    <input type="text" name="nombre" id="nombre" class=" focus:outline-none focus:border-sky-500 focus:ring-1 focus:ring-sky-500" >
-                </label>
-            </div>
+                    <div class="mb-3">
+                        <label for="precio" class="form-label">Precio:</label>
+                        <input type="number" name="precio" id="precio" class="form-control" placeholder="19.99">
+                    </div>
 
-           <div>
-                <label>Precio:
-                    <input type="number" name="precio" id="precio" class=" focus:outline-none focus:border-sky-500 focus:ring-1 focus:ring-sky-500" >
-                </label>
-            </div>
-           <div>
-                <label>Color:
-                    <input type="text" name="color"" id="color" class=" focus:outline-none focus:border-sky-500 focus:ring-1 focus:ring-sky-500" >
-                </label>
-            </div>
+                    <div class="mb-3">
+                        <label for="color" class="form-label">Color:</label>
+                        <input type="text" name="color" id="color" class="form-control" placeholder="Marrón">
+                    </div>
 
-            <div>
-                <label>Tamano:
-                    <input type="text" name="tamano" id="tamano" class=" focus:outline-none focus:border-sky-500 focus:ring-1 focus:ring-sky-500" >
-                </label>
-            </div>
+                    <div class="mb-3">
+                        <label for="tamano" class="form-label">Tamaño:</label>
+                        <input type="text" name="tamano" id="tamano" class="form-control" placeholder="Mediano">
+                    </div>
 
-            <div>
-                <label>Categoria:
-                    <input type="text" name="categoria" id="categoria" class=" focus:outline-none focus:border-sky-500 focus:ring-1 focus:ring-sky-500" >
-                </label>
-            </div>
+                    <div class="mb-3">
+                        <label for="categoria" class="form-label">Categoría:</label>
+                        <input type="text" name="categoria" id="categoria" class="form-control" placeholder="Animales">
+                    </div>
 
-            <div>
-                <label>Descripcion:
-                    <input type="text" name="descripcion" id="descripcion" class=" focus:outline-none focus:border-sky-500 focus:ring-1 focus:ring-sky-500" >
-                </label>
+                    <div class="mb-3">
+                        <label for="descripcion" class="form-label">Descripción:</label>
+                        <textarea name="descripcion" id="descripcion" class="form-control" ></textarea>
+                    </div>
+
+                    <div class="d-grid mb-3">
+                        <button type="submit" class="btn bg-btn hover:bg-btn2 text-stone-950 font-semibold">
+                            Agregar
+                        </button>
+                    </div> 
+                </form>
             </div>
-           <div>
-            <button type="submit" class="bg-btn p-2  text-stone-950 font-semibold btn hover:bg-btn2transition ease-in-out delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-110 duration-300 py-2 rounded-md" id="btn">
-                Agregar
-            </button>
-           </div> 
-        </form>
-    </div>
+        </div>
+    </main>
+    
     <script src="../js/bootstrap.min.js"></script>
 </body>
 </html>
