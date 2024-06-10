@@ -1,0 +1,29 @@
+:root {
+    --primary-color: #965738; /* Primary color */
+    --hover-color: #B5A582; /* Hover color */
+    --text-color: #000000; /* Text color */
+    --background-color: #ffffff; /* Background color */
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+.table-hover tbody tr:hover {
+    background-color: var(--hover-color);
+    color: white;
+}
+
+.table thead th {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.table-bordered th, .table-bordered td {
+    border: 1px solid var(--primary-color);
+}
+
+.table-responsive {
+    max-width: 90%;
+}
