@@ -6,13 +6,16 @@
     <title>Ver Peluches</title>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/verPeluche.css">
+    <script src="../js/tailwind.min.js"></script>
+    <script src="../js/form.js" defer></script>
+    <script src="../js/cookie.js"></script>
 </head>
 <body>
-    <div class="container py-5">
-        <h1 class="text-center mb-4">Peluches de Crochet</h1>
-        <div class="d-flex justify-content-center">
+    <main class="container py-5">
+        <h1 class="text-center mb-4 font-semibold text-3xl">Peluches de Crochet</h1>
+        <div class="d-flex justify-content-center ">
             <div class="table-responsive">
-                <table class="table table-bordered table-hover text-center">
+                <table class="table table-bordered table-hover text-center shadow-md" id="table">
                     <thead>
                         <tr>
                             <th>Nombre</th>
@@ -21,6 +24,7 @@
                             <th>Tamaño</th>
                             <th>Categoría</th>
                             <th>Descripción</th>
+                            <th>Opciones</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -31,6 +35,10 @@
                             <td>30 cm</td>
                             <td>Animales</td>
                             <td>Peluchito suave y adorable</td>
+                            <td>
+                                <button type="button" id="update1" class="rounded-md bg-emerald-400 p-2">Actualizar</button>
+                                <button type="button" id="delete1" class="rounded-md bg-red-400 p-2">Eliminar</button>
+                            </td>
                         </tr>
                         <tr>
                             <td>Osito Marrón</td>
@@ -39,12 +47,16 @@
                             <td>35 cm</td>
                             <td>Animales</td>
                             <td>Perfecto para abrazos</td>
+                            <td>
+                                <button type="button" id="update2" class="rounded-md bg-emerald-400 p-2" >Actualizar</button>
+                                <button type="button"id="delete2" class="rounded-md bg-red-400 p-2">Eliminar</button>
+                            </td>
                         </tr>
                     </tbody>
                 </table>
             </div>
         </div>
-    </div>
+    </main>
 
 </body>
 </html>
